@@ -75,8 +75,19 @@ public class BookListSample1 {
 				new Book("100","Japanese","Morishita",LocalDate.of(2018, 1, 10),2200),
 				new Book("410","English","Hunter",LocalDate.of(2017, 12, 11),5500)
 				);
-
+		//listup ( list , p );
 		listup(list,book -> "Tanaka".equals(book.getAuthor()));
+
+		listup(list,book -> book.getPrice() <= 3000);
+		//mencari buku dengan bahasa Inggris
+		listup(list,book -> book.getLanguage().equals("English"));
+
+		listup(list,book -> "English".equals(book.getAuthor()));
+		System.out.println();
+		//mencari buku dengan tanggal sebelum 2018/1/1
+		listup(list, book -> book.getDate().isBefore(LocalDate.of(2018, 1, 1)));
+		System.out.println();
+		listup(list,book -> Integer.parseInt(book.getCode()) >= 400);
 	}
 	public static void listup(List<Book> list, Predicate p)
 	{
