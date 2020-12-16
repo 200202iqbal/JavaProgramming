@@ -1,3 +1,4 @@
+//lambda
 package Lambda;
 
 public class ContohLambdaJava8
