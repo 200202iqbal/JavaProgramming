@@ -18,7 +18,7 @@ public class ContohLambdaJava8
 
     //tanpa return statement and tanpa kurang kurawal
     OperasiPerhitungan pembagian = (int a, int b) -> a / b;
-
+   
     System.out.println("10 + 5 = " + obj.operate(10,5,penjumlahan));
     System.out.println("10 - 5 = " + obj.operate(10,5,pengurangan));
     System.out.println("10 * 5 = " + obj.operate(10,5,perkalian));

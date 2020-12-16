@@ -15,5 +15,5 @@ public class TesterLambdaJava8
     GreetingService greetService1 = pesan ->
     System.out.println(msg + pesan);
     greetService1.sayMessage("Kitty");
-  }
+  }   
 }
