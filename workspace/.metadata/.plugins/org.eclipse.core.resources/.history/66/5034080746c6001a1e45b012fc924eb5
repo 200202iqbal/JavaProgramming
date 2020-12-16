@@ -1,0 +1,15 @@
+package ex3;
+
+public class exx2 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		int[] arr = {12,34,56,78,90,9,87,65,43,21};
+		
+		for ( int i : arr)
+		{
+			System.out.println(i);
+		}
+	}
+
+}

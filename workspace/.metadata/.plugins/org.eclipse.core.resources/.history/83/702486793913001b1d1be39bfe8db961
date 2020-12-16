@@ -1,0 +1,44 @@
+package ex100;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Map01 {
+
+	public static void main (String[] args)
+	{
+		//HashMap
+		Map <String, String> map = new HashMap <String, String>();
+		map.put("kunci1", "nilai1");
+		map.put("key2", "value2");
+		map.put("key3", "value3");
+		map.put("key4", "value4");
+		map.put("key5", "value5");
+
+
+		String value1 = map.get("kunci1");
+		System.out.println(value1);
+		String value2 = map.get("key2");
+		System.out.println(value2);
+		String value3 = map.get("key3");
+		System.out.println(value3);
+		String value4 = map.get("key4");
+		System.out.println(value4);
+		String value5 = map.get("key5");
+		System.out.println(value5);
+
+		System.out.println("/////////////");
+		Map <Integer, String> map2 = new HashMap < Integer, String> ();
+		Scanner scn = new Scanner (System.in);
+		int intScn = scn.nextInt();
+		System.out.println();
+		
+		String strScn = scn.nextLine();
+		map2.put(intScn, strScn);
+		System.out.println();
+		System.out.print(map2.get(intScn));
+		
+		String remValue = map.remove(intScn);
+		System.out.print(remValue);
+	}
+}

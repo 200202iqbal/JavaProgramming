@@ -1,0 +1,23 @@
+package ex1;
+
+public class BranchRep5 {
+
+	public static void main(String[] args) {
+
+		//if else
+		int age  = 10 ;
+		if (age >= 20 )
+		{
+			System.out.println("You can drink alcohol");
+		}else
+		{
+			System.out.println("You can't");
+		}
+
+		//if
+
+
+		//if else if else
+	}
+
+}

@@ -1,0 +1,24 @@
+package test;
+
+class Wallet {
+	static int cashTotal;
+	int coin;
+	int bill;
+	Wallet ( int c , int b )
+	{
+		coin = c ; bill = b ;
+		cashTotal += coin ;cashTotal += bill;
+	}
+}
+
+public class test2 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		Wallet w1 = new Wallet ( 12,100);
+		Wallet w2 = new Wallet ( 3 , 300 );
+		System.out.println("W2のbill" + w2.bill);
+		System.out.println("Cash トータル " + Wallet.cashTotal);
+	}
+
+}

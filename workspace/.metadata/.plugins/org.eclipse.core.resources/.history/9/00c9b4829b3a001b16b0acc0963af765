@@ -1,0 +1,30 @@
+package DateTime;
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.time.ZonedDateTime;
+import java.time.LocalDate;
+
+public class DateTime {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		LocalDateTime localdatetime = LocalDateTime.now();
+		OffsetDateTime offsetdatetime = OffsetDateTime.now();
+		ZonedDateTime zoneddatetime = ZonedDateTime.now();
+
+		System.out.println("1. ローカルな時間 : " + localdatetime);
+		System.out.println("2. 時差を扱う時間 : " + offsetdatetime);
+		System.out.println("3. タイムゾーンを扱う日時 :" + zoneddatetime);
+
+		//日付をつくる(日付オブジェクト作成)
+		//今日の日付
+		LocalDate today = LocalDate.now();
+		System.out.println(today);
+		//年月日を指定して作成
+		LocalDate date1 = LocalDate.of(2021,12,8);
+		System.out.println(date1);
+
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package ex1;
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class BranchRep4 {
+	public static void main(String [] args)
+	{
+		Scanner sc = new Scanner ( System.in);
+		
+		int r = new Random().nextInt(6)+1;
+		System.out.println("inp :");
+		int inp = sc.nextInt();
+		int cnt = 0;
+		
+		while ( r != inp )
+		{
+			System.out.println("違います");
+			cnt ++ ;
+			
+		}
+		if ( inp == r )
+		{
+			System.out.print("正解 ");
+			System.out.println(cnt);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

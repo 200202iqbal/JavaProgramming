@@ -1,0 +1,18 @@
+package ex3;
+
+public class exx1 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		int math = 20;
+		int lang = 30;
+		int sci = 40;
+		int eng = 50;
+		int soc = 80;
+		int sum = math + lang + sci + eng + soc ;
+		int ave = sum / 5 ;
+		System.out.println("平均点は" + ave + "点です");
+	}
+
+}

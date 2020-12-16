@@ -1,0 +1,55 @@
+package ex100;
+import java.util.HashMap;
+import java.util.Map;
+
+class HashClass
+{
+	int hashNo;
+
+	public HashClass (int num)
+	{
+		this.hashNo = num;
+	}
+
+	public void printHash()
+	{
+		System.out.println("HashMapでHashClassを作成しました : " + this.hashNo);
+	}
+}
+public class CollectionTest2 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		Map < String , String > map1 = new HashMap <String, String >();
+		map1.put("key1", "Map 1");
+		map1.put("key2", "Map 2");
+		map1.put("key3", "Map 3");
+		map1.remove(1);
+
+
+		System.out.println(map1.get("key1"));
+		System.out.println(map1.get("key2"));
+		System.out.println(map1.get("key3"));
+
+		System.out.println();
+
+		Map <Integer , String > map2 = new HashMap <Integer, String>();
+		map2.put(1,"MapA");
+		map2.put(2,"MapB");
+		map2.put(3,"MapC");
+		map2.put(4,"MapD");
+		map2.put(5,"MapE");
+
+		map2.put(2, "MapF");
+		map2.put(4, "MapG");
+		map2.remove(2);
+
+
+
+		for ( int i = 1 ; i <=5 ; i++)
+		{
+			System.out.println(map2.get(i));
+		}
+	}
+
+}

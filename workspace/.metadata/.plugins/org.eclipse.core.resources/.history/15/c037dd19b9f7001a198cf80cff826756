@@ -1,0 +1,22 @@
+package test;
+
+public class test2 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		int[] a = new int [20];
+		int i = 0;
+		a[0] = 100;
+		while ( i < 20) 
+		{
+			a[i] = i * 10 ;
+			if ( i % 3 == 0 )
+			{
+				continue;
+			}
+			i++;
+		}
+		System.out.println(a[3]);
+	}
+
+}

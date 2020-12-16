@@ -1,0 +1,45 @@
+package term2ReviewMondai;
+
+public class Kadai11 {
+
+	public static void main(String[] args) {
+		// 整数型の配列を引数とし、各要素を二乗するメソッドpow2を使って
+		//メインメソッドで、/拡張ｆｏｒ文を使って二乗前と後を並べて表示してください、
+		//　出力　　1 3 5 7
+		//　　　　　1 9 25 49
+		int[]  a= {1,3,5,7};
+		//　メインメソッド
+		//  以下にプログラムを作成
+		
+		// a を拡張for文で表示する
+		for ( int num : a ) {
+			System.out.print(num + " ");
+		}
+		
+		System.out.println(); //改行 を出力
+		
+		//メソッドpow2を呼び出す
+		pow2(a);
+		
+		// aを拡張for文を使わないで表示する
+		for ( int i = 0 ; i < a.length; i++ )
+		{
+			System.out.print(a[i] + " ");
+		}
+		
+		System.out.println();
+		
+		for ( int num : a )
+		{
+			System.out.print( num + " ");
+		}
+
+
+	}
+	public static void pow2(int[] array) {
+		for(int i = 0; i < array.length; i++) {
+			array[i] = array[i] * array[i];
+		}
+	}
+
+}

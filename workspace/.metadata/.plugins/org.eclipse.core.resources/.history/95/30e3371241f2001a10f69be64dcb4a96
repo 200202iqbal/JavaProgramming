@@ -1,0 +1,39 @@
+package term2ReviewMondai;
+// Studentクラス を定義してください
+
+//フィールド(メンバ変数）にint id; String name を持たせます。
+//インスタンスごとに個別の値を持つことができます。
+
+
+// idとnameを引数とする、引数有のコンストラクタを作成してください
+
+// 引数の無いコンストラクタを追記してください。
+
+//このクラスに、idとnameを表示するメンバメソッドshowStudent()（戻値なし、引数なし）を定義してください
+
+
+
+public class ObjName {
+	public static void main(String[] args) {
+		//引数なしのコンストラクタでインスタンスmemer1を作ってください。
+
+		//member1のidに200999、nameに”Yamamoto”をセットしてください。
+
+
+		//引数ありのコンストラクタで、id=200998 name＝”Tanaka”のインスタンスmember2を作ってください
+
+		//インスタンスメソッドshowStudent()を使ってmember1を表示してください
+
+		//member1のidを210999に変更してください
+
+		//インスタンスメソッドshowStudent()を使って変更後のmember1を表示してください
+
+		//member2のidとnameをメソッドprintStudent()を使って表示してください
+
+	}
+	//メインメソッドがあるクラスのクラスメソッドの定義　引数あり　戻り値なし （static）
+	//　クラス型　Student memを引数とし、★を頭につけて表示しましょう。
+
+
+
+}

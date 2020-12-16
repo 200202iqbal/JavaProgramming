@@ -1,0 +1,22 @@
+package ex100;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Map02 {
+	public static void main (String[] args)
+	{
+		Map<String, String> dic = new HashMap < String, String>();
+		
+		
+		Scanner scn = new Scanner (System.in);
+		System.out.print("Input > ");
+		String inp = scn.next();
+		dic.put(inp, "りんご");
+		String op = dic.get(inp);
+		System.out.println("Nilai > " + op);
+		
+		String dicStr = dic.put(inp, "みかん");
+		System.out.println("Nilai 2 > " + dicStr);
+	}
+}
